@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>(Quickly) securing your Clojure applications... </title>
+
+    <meta name="description" content="...">
+    <meta name="author" content="Filip Bielejec">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="reveal/css/reveal.min.css">
+    <link rel="stylesheet" href="reveal/css/theme/keycloak.css" id="theme">
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu|Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write('<link rel="stylesheet" href="reveal/css/print/' + ( window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">');
+    </script>
+
+    <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+
+        <section data-background="images/overImg.png" data-background-transition="none" data-transition="none">
+          <img height="100" width="100" src="images/keycloak.png">
+          <h3>Keycloak</h3>
+          <h4>(Quickly) securing your Clojure applications</h4> 
+          <br>        
+          <p>
+            <span>Filip Bielejec / <a href="mailto:fbielejec@gmail.com" target="_top">fbielejec@gmail.com</a></span>
+          </p>
+          <p> 
+            <div>
+              <img height="25" width="25" style="vertical-align:middle" src="images/twitter.png"> /
+              <span><a href="https://twitter.com/fbielejec">fbielejec</a></small>
+</div>
+</p>
+<p> 
+  <img height="25" width="25" style="vertical-align:middle" src="images/github.png"> /
+  <span><a href="https://twitter.com/fbielejec">fbielejec</a></span>
+</p>
+
+</section>
+
+<section data-background="images/overImg.png" data-background-transition="none" data-transition="none">
+  <h3 color="#292E37">Security is hard...</h3>    
+  <ul>
+    <li>Login forms</li>
+    <li>Password recovery</li>
+    <li>Session management</li>
+    <li>Tokens</li>
+    <li>Two-factor auth</li>
+    <li>Social logins</li>
+    <li>Single-Sign-On (SSO)</li>
+    <li>
+      Security vulnerabilities
+      <img height="25" width="25" style="vertical-align:middle" src="images/heartbleed.png">
+    </li>
+    <li>...</li>
+  </ul>
+</section>
+
+<section data-background="images/overImg.png" data-background-transition="none" data-transition="none">
+  <h3>Keycloak can do it for you!</h3>
+  <img src="images/realms.jpg">
+</section>
+
+
+<section data-background="images/overImg.png" data-background-transition="none" data-transition="none">
+  <h3>(Http) redirect</h3>
+  <img src="images/policeman.png">
+  <img src="images/redirect.png">
+</section>
+
+<section data-background="images/overImg.png" data-background-transition="none" data-transition="none">
+  <h3> <img height="100" width="100" style="vertical-align:middle" src="images/jwt.png"> JSON Web Token</h3>
+  <img height="400" width="600" src="images/passport.jpg">
+</section>
+
+<section data-background="images/overImg.png" data-background-transition="none">
+  <h1> <font color="#df8f09">Demo</font></h1>
+  <span> 
+  <a href="https://github.com/fbielejec/clojure-keycloak-demo">
+   <font color="#ff6347">https://github.com/fbielejec/clojure-keycloak-demo</font>
+  </a>
+ </span>
+</section> 
+
+  </div>
+</div>
+
+<script src="reveal/lib/js/head.min.js"></script>
+<script src="reveal/js/reveal.min.js"></script>
+<script src="reveal/js/config.js"></script>
+
+</body>
+</html>
+
